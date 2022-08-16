@@ -44,5 +44,14 @@ public class HelperBase {
     public void hideAds(){
         JavascriptExecutor js = (JavascriptExecutor) wd;
         js.executeScript("document.querySelector('#adplus-anchor').style.display='none'");
+        js.executeScript("document.querySelector('#close-fixedban').style.display='none'");
     }
+
+    public void scroll(int x, int y){
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("window.scrollBy(" + x + "," + y + ")");
+    }
+
+
+
 }
