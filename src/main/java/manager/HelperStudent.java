@@ -88,7 +88,7 @@ public class HelperStudent extends HelperBase{
         for(String sub : subjects){
             wd.findElement(By.id(locator)).sendKeys(sub);
             wd.findElement(By.id(locator)).sendKeys(Keys.ENTER);
-            // pause(3000);
+             pause(3000);
         }
     }
     public void BDaySelect(String birthday){
